@@ -10,162 +10,134 @@
       @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
     </style>
   </head>
-  <body class="sm:bg-blue-500 md:bg-red-200">
+  <body class="max-w-6xl mx-auto">
     <!-- header -->
-    <div class="m-5 mt-7 mb-9">
-      <img class="" src="./assets/image/logo.png" alt="" />
-    </div>
-    <div class="mx-5 container">
-      <h2 class="font-poppins text-[46px] font-extrabold text-slate-800">
-        Manage Payroll Like an Expert
-      </h2>
-      <p class="font-poppins font-normal text-base leading-9 mt-5 mr-5">
-        Payna is helping you to setting up the payroll without required any
-        finance skills or knowledge before
-      </p>
-      <button
-        class="my-10 bg-blue-600 inline-block py-4 px-10 text-white font-semibold rounded-[50px]"
-      >
-        Get Started
-      </button>
-    </div>
-    <div class="mx-5">
-      <p class="font-poppins font-bold text-base">
-        Trusted by Global Companies
-      </p>
-      <img class="my-8" src="./assets/image/sponsor-top.png" alt="" />
-      <img class="" src="./assets/image/sponsor-bottom.png" alt="" />
-    </div>
-    <div class="mx-5 mt-24 text-center">
-      <h3
-        class="mb-4 text-red-600 font-poppins text-base font-bold tracking-wider"
-      >
-        WORK BETTER
-      </h3>
-      <h2 class="text-3xl font-bold mb-6">For Your Business</h2>
-      <p class="leading-8 font-normal">
-        We did research what your company needs and here we are providing all of
-        them just for you
-      </p>
-    </div>
-    <!-- batas logo -->
-    <div class="mx-5 my-20 flex">
-      <div>
-        <img
-          class="block float-left mr-10 pr-5"
-          src="./assets/image/insight.png"
-          alt=""
-        />
+    <header class="mx-10 lg:mx-0 my-6 font-poppins flex flex-wrap  md:justify-between lg:justify-around items-center">
+      <img src="./assets/image/logo.png" alt="" />
+      <nav class="hidden lg:block">
+        <a class="px-3 hover:bg-[#F5F6FB] hover:rounded-full" href="#">Home</a>
+        <a class="px-3 hover:bg-[#F5F6FB] hover:rounded-full" href="#">Features</a>
+        <a class="px-3 hover:bg-[#F5F6FB] hover:rounded-full" href="#">Showcase</a>
+        <a class="px-3 hover:bg-[#F5F6FB] hover:rounded-full" href="#">Pricing</a>
+      </nav>
+      <button class="hidden md:block lg:block px-10 py-1 border bg-[#F5F6FB] hover:bg-slate-50 rounded-full">Sign In</button>
+    </header>
+    <!-- section -->
+    <section class="mx-10 lg:mx-20 lg:mt-20 font-poppins">
+      <!-- head section -->
+      <div class="lg:flex justify-between items-center overflow-hidden ">
+        <div class="max-w-[500px] md:my-[68px] lg:my-2 md:mx-auto lg:mx-0 lg:text-left md:text-center">
+          <h2 class="text-[55px] font-[1000] leading-tight mb-5">Manage Payroll Like an Expert</h2>
+          <p class="text-md leading-relaxed">Payna is helping you to setting up the payroll without required any finance skills or knowledge before</p>
+          <button class="my-10 bg-[#1F7CFF] hover:bg-blue-600 text-slate-50 rounded-full px-7 py-3 ">Get Started</button>
+        </div>
+        <!-- image head section -->
+        <div class="hidden lg:block relative mb-20  ">
+          <img class="min-w-full" src="./assets/image/hero-image-new.png" alt="">
+        </div>
       </div>
-      <div>
-        <h3 class="font-semibold text-lg mb-3">Share Insight</h3>
-        <p class="text-base font-normal">
-          Working together with your team to make decisions
-        </p>
+      <!-- sponsorship section -->
+      <div class="flex lg:flex-row flex-col justify-between items-center gap-9">
+        <p class="hidden lg:inline-block">Trusted by<br>Global Companies</p>
+        <p class="lg:hidden">Trusted by Global Companies</p>
+        <div class="inline-block">
+          <img class="max-h-10 inline-block p-1" src="./assets/image/brand-apple.png" alt="">
+          <img class="max-h-10 inline-block p-1" src="./assets/image/brand-adobe.png" alt="">
+          <img class="max-h-10 inline-block p-1" src="./assets/image/brand-slack.png" alt="">
+          <img class="max-h-10 inline-block p-1" src="./assets/image/brand-spotify.png" alt="">
+          <img class="max-h-10 inline-block p-1" src="./assets/image/brand-google.png" alt="">
+        </div>
       </div>
-    </div>
-    <div class="mx-5 my-20 flex">
-      <div>
-        <img
-          class="block float-left mr-10 pr-5"
-          src="./assets/image/offline.png"
-          alt=""
-        />
+      <!-- trademark section -->
+      <div class="text-center my-14 max-w-md mx-auto py-3">
+        <h3 class="font-semibold text-[#F75C4E] p-2">WORK BETTER</h3>
+        <h3 class="text-3xl font-black tracking-wide p-2">For Your Business</h3>
+        <p class="p-1">We did research what your company needs and
+          here we are providing all of them just for you</p>
       </div>
-      <div>
-        <h3 class="font-semibold text-lg mb-3">Offline Mode</h3>
-        <p class="text-base font-normal">
-          Use the feature while off from internet? sure can
-        </p>
+      <!-- features section -->
+      <div class="flex flex-col md:flex-row flex-wrap md:justify-around lg:justify-around gap-7 pb-28">
+        <!-- feature share -->
+        <div class="mx-5 md:mx-0  flex flex-row gap-4 md:w-72">
+          <img class="w-16 h-16" src="./assets/image/insight.png" alt="">
+          <div>
+            <h3 class="font-bold pt-1 pb-2">Share Insight</h3>
+            <p>Working together with your
+              team to make decisions</p>
+          </div>
+        </div>
+        <!-- feature offline -->
+        <div>
+          <div class="mx-5 md:mx-0 flex flex-row gap-4 md:w-72">
+            <img class="w-16 h-16" src="./assets/image/offline.png" alt="">
+            <div>
+              <h3 class="font-bold pt-1 pb-2">Offline Mode</h3>
+              <p>Use the feature while off
+                from internet? sure can</p>
+            </div>
+          </div>
+        </div>
+        <!-- feature kanban -->
+        <div>
+          <div class="mx-5 md:mx-0 flex flex-row gap-4 md:w-72">
+            <img class="w-16 h-16" src="./assets/image/kanban.png" alt="">
+            <div>
+              <h3 class="font-bold pt-1 pb-2">Kanban Mode</h3>
+              <p>Organize the report that
+                easy to be understand</p>
+            </div>
+          </div>
+        </div>
+        <!-- feature track -->
+        <div>
+          <div class="mx-5 md:mx-0 flex flex-row gap-4 md:w-72">
+            <img class="w-16 h-16" src="./assets/image/track.png" alt="">
+            <div>
+              <h3 class="font-bold pt-1 pb-2">Track Leads</h3>
+              <p>See where your money goes
+                and comes in business</p>
+            </div>
+          </div>
+        </div>
+        <!-- feature country -->
+        <div>
+          <div class="mx-5 md:mx-0 flex flex-row gap-4 md:w-72">
+            <img class="w-16 h-16" src="./assets/image/country.png" alt="">
+            <div>
+              <h3 class="font-bold pt-1 pb-2">189 Country</h3>
+              <p>Working together worldwide
+                people from anywhere</p>
+            </div>
+          </div>
+        </div>
+        <!-- feature reward -->
+        <div>
+          <div class="mx-5 md:mx-0 flex flex-row gap-4 md:w-72">
+            <img class="w-16 h-16" src="./assets/image/reward.png" alt="">
+            <div>
+              <h3 class="font-bold pt-1 pb-2">Reward System</h3>
+              <p>Motivate your team working
+                harder and receive a gift</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="mx-5 my-20 flex">
-      <div>
-        <img
-          class="block float-left mr-10 pr-5"
-          src="./assets/image/kanban.png"
-          alt=""
-        />
+      <!-- action section -->
+      <div class="flex flex-col lg:flex-row h-[350px] pb-10">
+        <img class="mx-auto" src="./assets/image/image.png" alt="">
+        <div class="p-10">
+          <div class="text-center lg:text-left">
+            <h3><span class="text-[#F75C4E] font-bold py-2 inline-block">SAVE MORE TIME</span></br><span class="pb-5 inline-block font-extrabold text-2xl">And Boost Productivity</span></h3>
+            <p class="max-w-md mx-auto">Your employees can bring any success into your
+              business, so we need to take care of them</p>
+          </div>
+          <form class="mx-auto lg:mx-0 w-72 py-5 mt-5 lg:relative ">
+            <input class="z-30 focus:focus:outline-none lg:absolute mx-auto w-full placeholder-gray-600 py-3 px-4 bg-[#F5F6FB] rounded-3xl" type="text" placeholder="Email Address">
+            <p class="absolute -right-8 mx-auto w-32 -z-300 py-6 bg-[#F5F6FB]"> </p>
+            <button class="z-40 -right-28 lg:absolute lg:w-32 mx-auto w-full bg-[#1F7CFF] py-3 px-4 text-slate-100 rounded-3xl" type="submit">Get Started</button>
+          </form>
+        </div>
       </div>
-      <div>
-        <h3 class="font-semibold text-lg mb-3">Kanban Mode</h3>
-        <p class="text-base font-normal">
-          Organize the report that easy to be understand
-        </p>
-      </div>
-    </div>
-    <div class="mx-5 my-20 flex">
-      <div>
-        <img
-          class="block float-left mr-10 pr-5"
-          src="./assets/image/insight.png"
-          alt=""
-        />
-      </div>
-      <div>
-        <h3 class="font-semibold text-lg mb-3">Track Leads</h3>
-        <p class="text-base font-normal">
-          See where your money goes and comes in business
-        </p>
-      </div>
-    </div>
-    <div class="mx-5 my-20 flex">
-      <div>
-        <img
-          class="block float-left mr-10 pr-5"
-          src="./assets/image/country.png"
-          alt=""
-        />
-      </div>
-      <div>
-        <h3 class="font-semibold text-lg mb-3">189 Country</h3>
-        <p class="text-base font-normal">
-          Working together worldwide people from anywhere
-        </p>
-      </div>
-    </div>
-    <div class="mx-5 my-20 flex">
-      <div>
-        <img
-          class="block float-left mr-10 pr-5"
-          src="./assets/image/reward.png"
-          alt=""
-        />
-      </div>
-      <div>
-        <h3 class="font-semibold text-lg mb-3">Reward System</h3>
-        <p class="text-base font-normal">
-          Motivate your team working harder and receive a gift
-        </p>
-      </div>
-    </div>
-    <div class="mx-5 mt-24 text-center">
-      <h3
-        class="mb-4 text-red-600 font-poppins text-base font-bold tracking-wider"
-      >
-        SAVE MORE TIME
-      </h3>
-      <h2 class="text-3xl font-bold mb-6">And Boost Productivity</h2>
-      <p class="leading-8 font-normal">
-        Your employees can bring any success into your business, so we need to
-        take care of them
-      </p>
-    </div>
-    <div class="mx-5">
-      <div class="">
-        <p
-          class="mt-10 pl-4 bg-slate-200 py-3 text-sm rounded-[50px] text-slate-700"
-        >
-          Email Address
-        </p>
-      </div>
-      <div class="cursor-pointer">
-        <p
-          class="mb-10 mt-3 bg-blue-600 py-3 text-white font-semibold rounded-[50px] text-center"
-        >
-          Get Started
-        </p>
-      </div>
-    </div>
+    </section>
   </body>
 </html>
