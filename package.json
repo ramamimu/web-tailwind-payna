@@ -4,5 +4,8 @@
   },
   "scripts": {
     "tw": "npx tailwindcss -i ./style.css -o ./output.css --watch"
+  },
+  "dependencies": {
+    "sweetalert2": "^11.4.24"
   }
 }

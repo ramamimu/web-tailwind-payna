@@ -8,17 +8,21 @@
     <link rel="stylesheet" href="output.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+      html {
+        scroll-behavior: smooth;
+      }
     </style>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body class="max-w-6xl mx-auto">
     <!-- header -->
     <header class="mx-10 lg:mx-0 my-6 font-poppins flex flex-wrap  md:justify-between lg:justify-around items-center">
       <img src="./assets/image/logo.png" alt="" />
       <nav class="hidden lg:block">
-        <a class="px-3 hover:bg-[#F5F6FB] hover:rounded-full" href="#">Home</a>
-        <a class="px-3 hover:bg-[#F5F6FB] hover:rounded-full" href="#">Features</a>
-        <a class="px-3 hover:bg-[#F5F6FB] hover:rounded-full" href="#">Showcase</a>
-        <a class="px-3 hover:bg-[#F5F6FB] hover:rounded-full" href="#">Pricing</a>
+        <a class="px-3 transition-all duration-500 hover:bg-[#F5F6FB] hover:rounded-full" href="#">Home</a>
+        <a class="px-3 transition-all duration-500 hover:bg-[#F5F6FB] hover:rounded-full" href="#">Features</a>
+        <a class="px-3 transition-all duration-500 hover:bg-[#F5F6FB] hover:rounded-full" href="#">Showcase</a>
+        <a class="px-3 transition-all duration-500 hover:bg-[#F5F6FB] hover:rounded-full" href="#">Pricing</a>
       </nav>
       <button class="hidden md:block lg:block px-10 py-1 border bg-[#F5F6FB] hover:bg-slate-50 rounded-full">Sign In</button>
     </header>
@@ -27,9 +31,9 @@
       <!-- head section -->
       <div class="lg:flex justify-between items-center overflow-hidden ">
         <div class="max-w-[500px] md:my-[68px] lg:my-2 md:mx-auto lg:mx-0 lg:text-left md:text-center">
-          <h2 class="text-[55px] font-[1000] leading-tight mb-5">Manage Payroll Like an Expert</h2>
+          <h2 class="text-[55px] font-[1000] leading-snug mb-5">Manage Payroll <span class="relative md:motion-safe:animate-[bounce_2s_ease-in-out_infinite] inline-block ">Like an Expert<span></h2>
           <p class="text-md leading-relaxed">Payna is helping you to setting up the payroll without required any finance skills or knowledge before</p>
-          <button class="my-10 bg-[#1F7CFF] hover:bg-blue-600 text-slate-50 rounded-full px-7 py-3 ">Get Started</button>
+          <a href="#form-submit"><button  class="my-10 bg-[#1F7CFF] text-slate-50 rounded-full px-12 py-3 group :transition-all duration-500 " ><span class="after:content-['\00bb'] after:text-2xl relative inline-block group-hover:after:opacity-100 group-hover:after:-right-6 after:opacity-0 after:-top-1 after:-right-5 after:absolute transition duration-500 after:duration-300 group-hover:-translate-x-3">Get Started<span/></button></a>
         </div>
         <!-- image head section -->
         <div class="hidden lg:block relative mb-20  ">
@@ -58,7 +62,7 @@
       <!-- features section -->
       <div class="flex flex-col md:flex-row flex-wrap md:justify-around lg:justify-around gap-7 pb-28">
         <!-- feature share -->
-        <div class="mx-5 md:mx-0  flex flex-row gap-4 md:w-72">
+        <div class="mx-5 md:mx-0 flex flex-row gap-4 md:w-72 hover:rounded-full hover:rounded-l-none px-2 py-3 hover:shadow-xl transition-all duration-500">
           <img class="w-16 h-16" src="./assets/image/insight.png" alt="">
           <div>
             <h3 class="font-bold pt-1 pb-2">Share Insight</h3>
@@ -68,7 +72,7 @@
         </div>
         <!-- feature offline -->
         <div>
-          <div class="mx-5 md:mx-0 flex flex-row gap-4 md:w-72">
+          <div class="mx-5 md:mx-0 flex flex-row gap-4 md:w-72 hover:rounded-full hover:rounded-l-none px-2 py-3 hover:shadow-xl transition-all duration-500">
             <img class="w-16 h-16" src="./assets/image/offline.png" alt="">
             <div>
               <h3 class="font-bold pt-1 pb-2">Offline Mode</h3>
@@ -79,7 +83,7 @@
         </div>
         <!-- feature kanban -->
         <div>
-          <div class="mx-5 md:mx-0 flex flex-row gap-4 md:w-72">
+          <div class="mx-5 md:mx-0 flex flex-row gap-4 md:w-72 hover:rounded-full hover:rounded-l-none px-2 py-3 hover:shadow-xl transition-all duration-500">
             <img class="w-16 h-16" src="./assets/image/kanban.png" alt="">
             <div>
               <h3 class="font-bold pt-1 pb-2">Kanban Mode</h3>
@@ -90,7 +94,7 @@
         </div>
         <!-- feature track -->
         <div>
-          <div class="mx-5 md:mx-0 flex flex-row gap-4 md:w-72">
+          <div class="mx-5 md:mx-0 flex flex-row gap-4 md:w-72 hover:rounded-full hover:rounded-l-none px-2 py-3 hover:shadow-xl transition-all duration-500">
             <img class="w-16 h-16" src="./assets/image/track.png" alt="">
             <div>
               <h3 class="font-bold pt-1 pb-2">Track Leads</h3>
@@ -101,7 +105,7 @@
         </div>
         <!-- feature country -->
         <div>
-          <div class="mx-5 md:mx-0 flex flex-row gap-4 md:w-72">
+          <div class="mx-5 md:mx-0 flex flex-row gap-4 md:w-72 hover:rounded-full hover:rounded-l-none px-2 py-3 hover:shadow-xl transition-all duration-500">
             <img class="w-16 h-16" src="./assets/image/country.png" alt="">
             <div>
               <h3 class="font-bold pt-1 pb-2">189 Country</h3>
@@ -112,7 +116,7 @@
         </div>
         <!-- feature reward -->
         <div>
-          <div class="mx-5 md:mx-0 flex flex-row gap-4 md:w-72">
+          <div class="mx-5 md:mx-0 flex flex-row gap-4 md:w-72 hover:rounded-full hover:rounded-l-none px-2 py-3 hover:shadow-xl transition-all duration-500">
             <img class="w-16 h-16" src="./assets/image/reward.png" alt="">
             <div>
               <h3 class="font-bold pt-1 pb-2">Reward System</h3>
@@ -131,13 +135,14 @@
             <p class="max-w-md mx-auto">Your employees can bring any success into your
               business, so we need to take care of them</p>
           </div>
-          <form class="mx-auto lg:mx-0 w-72 py-5 mt-5 lg:relative ">
-            <input class="z-30 focus:focus:outline-none lg:absolute mx-auto w-full placeholder-gray-600 py-3 px-4 bg-[#F5F6FB] rounded-3xl" type="text" placeholder="Email Address">
+          <form id="form-submit" class="mx-auto lg:mx-0 w-72 py-5 mt-5 lg:relative" >
+            <input id="email-form" class="z-30 focus:focus:outline-none lg:absolute mx-auto w-full placeholder-gray-600 py-3 px-4 bg-[#F5F6FB] rounded-3xl" type="email" placeholder="Email Address" required>
             <p class="absolute -right-8 mx-auto w-32 -z-300 py-6 bg-[#F5F6FB]"> </p>
-            <button class="z-40 -right-28 lg:absolute lg:w-32 mx-auto w-full bg-[#1F7CFF] py-3 px-4 text-slate-100 rounded-3xl" type="submit">Get Started</button>
+            <button class="z-40 -right-28 lg:absolute lg:w-32 mx-auto w-full bg-[#1F7CFF] hover:bg-[#0e51b0] transition duration-1000  py-3 px-4 text-slate-100 rounded-3xl" type="submit">Get Started</button>
           </form>
         </div>
       </div>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
